@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.80em;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* display: inline; */
+}
+
+.btn-link {
+    color: #0071BA;
+    font-weight: bolder;
+    display: inline-block;
+    border-bottom: 2px solid white;
+}
+
+.card {
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+.card a {
+    border: 1px solid blue;
+}
+
+.card a img {
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+
+.card a p {
+    padding-right: 25px;
+    padding-bottom: 2em;
+    padding-top: 1em;
+
+}
+
+/*-----------------------------------------------MAIN */
+main {
+    position: relative;
+    margin: 10px auto;
+    width: 85%;   
+}
+
+.logo{
+    position: absolute;
+    top: -4px;
+    left: 5px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+    margin-top: 1.5em;
+}
+
+
+/* ------------------------------------------- MAIN MENU */
+.main-menu, .side-menu{
+    display: flex;
+    /*border: 1px black solid;*/
+}
+
+.main-menu li:first-child{
+    margin-left: 14em;
+}
+
+.main-menu li:not(:first-child){
+    margin-left: 2.1em;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin-top: 4px;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+.nav ul li:hover {
+    border-bottom: 2px black solid;
+}
+
+
+/* ----------------------------------------- SIDE MENU */
+.side-menu li{
+    margin-left: 5em;
+}
+
+.side-menu li:not(:last-child):hover {
+    border-bottom: 2px black solid;
+}
+
+.side-menu li:first-child {
+    border-bottom: 2px black solid;
+}
+
+.side-menu li:last-child {
+    margin-right: 35px;
+}
+
+#search-icon {
+    position: absolute; 
+    font-size: 25px;
+    top: 1px;
+    left: 42px;
+    opacity: 0.6;
+}
+
+#cart-icon {
+    position: absolute; 
+    font-size: 22px;
+    top: 1px;
+    left: 28px;
+    opacity: 0.6;
+
+}
+
+#sign-in-icon {
+    position: absolute; 
+    font-size: 22px;
+    top: 1px;
+    left: 45px;
+    opacity: 0.6;
+}
+
+/* ------------------------------------------HEADER */
+
+
+.jumbotron-1 {
+    opacity: 0.7;
+    margin-bottom: 4em;
+}
+
+
+/* ----------------------------------------SHOP SECTION */
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    margin-bottom: 3em;
+}
+
+.shop a {
+    padding: 3em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop a:hover {
+    text-decoration: underline;
+}
+
+.shop a img {
+    padding: 0 auto;
+    margin-bottom: 1em;
+}
+
+.shop a h3 {
+    text-align: center;
+    font-weight: 900;
+}
+
+#shop-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* ---------------------------------------OFFER SECTION */
+
+.offers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.btn-link:hover {
+    color: #0071BA;
+    border-bottom: 2px solid #0071BA;
+}
+
+
+
+
+
+/* ----------------------------------------BETHESDA JUMBOTRON */
+
+.jumbotron-2 {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.join {
+    position: absolute;  
+    top: 18em;
+    left: 6em;
+    padding: 0px;
+}
+
+.join h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 0.5em;
+}
+
+.join p {
+    font-size: 1.3em;
+    margin: 0px;
+    padding-bottom: 2em;
+}
+
+#btn-join {
+    width: 270px;
+    height: 3em;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+#btn-join p {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 0.55em;
+    padding-bottom: 0px;
+    margin-left: 1.5em;
+    display: inline-block;
+}
+
+#btn-join p:hover {
+    border-bottom: 2px white solid;
+}
+
+/* ----------------------------------------------FOR BUSINESS */
+
+.for-business {
+    max-width: 1600px;
+}
+
+
+.for-business li {
+    list-style-type: none;
+}
+
+
+/* -----------------------------------------------BIG TEXT FOOTER */
+
+footer {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0;
+    background: #f2f2f2;
+
+    
+}
+
+.big-text {
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    margin: 0px 5%;
+    background: #f2f2f2;
+    color: #867F7F;
+}
+
+.big-text h3{
+    font-weight: bold;
+    padding-top: 1.8em;
+    font-size: 1.3em;
+}
+
+.big.text div {
+    width: 1fr;
+}
+
+
+
+/* ---------------------------------------------SMALL TEXT FOOTER */
+
+.small-text {
+    display: flex;
+}
+
