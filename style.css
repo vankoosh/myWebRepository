@@ -24,6 +24,11 @@ a {
     border-bottom: 2px solid white;
 }
 
+.btn-link:hover {
+    color: #0071BA;
+    border-bottom: 2px solid #0071BA;
+}
+
 .card {
     max-width: 100%;
     font-size: 1.2em;
@@ -187,14 +192,10 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* justify-content: space-between; */
     gap: 4%;
 }
 
-.btn-link:hover {
-    color: #0071BA;
-    border-bottom: 2px solid #0071BA;
-}
+
 
 
 
@@ -203,32 +204,30 @@ main {
 /* ----------------------------------------BETHESDA JUMBOTRON */
 
 .jumbotron-2 {
-    background: url('IMAGES\Jumbotron-2.png');
     margin-top: 4em;
     margin-bottom: 4em;
     position: relative;
-    height: 500px;
-    width: 1600px;
+    width: 100%;
 }
 
 .join {
     position: absolute;  
-    top: 18em;
+    top: 35%;
     left: 6em;
     padding: 0px;
-    width: 25%;
+    width: 40%;
     height: 25%;
 }
 
 .join h1 {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2.0em;
+    font-weight:     bold;
     margin: 0px;
     padding-bottom: 0.5em;
 }
 
 .join p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0px;
     padding-bottom: 2em;
 }
@@ -265,7 +264,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3.5%;
+    gap: 4%;
 }
 
 
@@ -273,13 +272,18 @@ main {
     list-style-type: none;
 }
 
+.for-business li img {
+    width: 100%;
+}
+
+
 
 /* -----------------------------------------------BIG TEXT FOOTER */
 
 footer {
     width: 100%;
     height: 500px;
-    margin: 0px;
+    margin: 0;
     padding: 0;
     background: #f2f2f2;
 
