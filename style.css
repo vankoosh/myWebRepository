@@ -30,7 +30,7 @@ a {
 }
 
 .card a {
-    border: 1px solid blue;
+    display: block;
 }
 
 .card a img {
@@ -49,7 +49,8 @@ a {
 main {
     position: relative;
     margin: 10px auto;
-    width: 85%;   
+    width: 85%;
+    max-width: 1600px;   
 }
 
 .logo{
@@ -186,7 +187,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 4%;
 }
 
@@ -202,9 +203,12 @@ main {
 /* ----------------------------------------BETHESDA JUMBOTRON */
 
 .jumbotron-2 {
+    background: url('IMAGES\Jumbotron-2.png');
     margin-top: 4em;
     margin-bottom: 4em;
     position: relative;
+    height: 500px;
+    width: 1600px;
 }
 
 .join {
@@ -212,6 +216,8 @@ main {
     top: 18em;
     left: 6em;
     padding: 0px;
+    width: 25%;
+    height: 25%;
 }
 
 .join h1 {
@@ -228,11 +234,14 @@ main {
 }
 
 #btn-join {
-    width: 270px;
-    height: 3em;
-    box-sizing: border-box;
+    padding: 10px 30px;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
 }
 
 #btn-join p {
@@ -246,14 +255,17 @@ main {
     display: inline-block;
 }
 
-#btn-join p:hover {
-    border-bottom: 2px white solid;
+#btn-join:hover {
+    border-bottom: 2px blue solid;
 }
 
 /* ----------------------------------------------FOR BUSINESS */
 
 .for-business {
-    max-width: 1600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.5%;
 }
 
 
