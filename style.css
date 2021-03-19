@@ -195,12 +195,6 @@ main {
     gap: 4%;
 }
 
-
-
-
-
-
-
 /* ----------------------------------------BETHESDA JUMBOTRON */
 
 .jumbotron-2 {
@@ -267,7 +261,6 @@ main {
     gap: 4%;
 }
 
-
 .for-business li {
     list-style-type: none;
 }
@@ -310,6 +303,29 @@ main {
     top: 10rem;
     right: 10rem;
     font-size: 1.2rem;
+}
+
+.empower p {
+    margin: 1rem 0 1rem;
+    font-size: smaller;
+}
+
+#btn-stories {
+    padding: 10px 50px;
+    background-color: black;
+    display: inline-block;
+    margin: 0;
+}
+
+.black-btn {
+    color: white;
+    margin: 0px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+}
+
+#black-btn:hover {
+    border-bottom: blue;
 }
 
 
