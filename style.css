@@ -16,7 +16,7 @@ a {
     color: inherit;
     /* display: inline; */
 }
-
+/* --------------------------------------------BLUE CARD LINKS */
 .btn-link {
     color: #0071BA;
     font-weight: bolder;
@@ -28,7 +28,7 @@ a {
     color: #0071BA;
     border-bottom: 2px solid #0071BA;
 }
-
+/* --------------------------------------------------CARDS */
 .card {
     max-width: 100%;
     font-size: 1.2em;
@@ -47,6 +47,34 @@ a {
     padding-right: 25px;
     padding-bottom: 2em;
     padding-top: 1em;
+
+}
+/* -----------------------------------------BLACK LINK JUMBOTRON BUTTON */
+.jumbo-link {
+    display: block;
+    color: white;
+}
+
+
+.jumbo-link span {
+    display: inline-block;
+    background-color: black;
+    padding: 10px 4rem 10px 25px;
+    box-shadow: 1px 1px 3px #757575;
+    box-shadow: -1px -1px 3px #757575;
+
+}
+
+.jumbo-link span p {
+    display: inline;
+    padding:0px;
+    border-bottom: 2px solid black;
+    transition: border-bottom 0.3s, padding 0.3s;
+}
+
+.jumbo-link span p:hover {
+    border-bottom: 2px solid white;
+
 
 }
 
@@ -225,32 +253,12 @@ main {
     margin: 0px;
     padding-bottom: 2em;
 }
-
-#btn-join {
-    padding: 10px 30px;
-    background-color: black;
+/* 
+.join .jumbo-link {
+    display: block;
     color: white;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: inline-block;
-}
+} */
 
-#btn-join p {
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding-top: 0.55em;
-    padding-bottom: 0px;
-    margin-left: 1.5em;
-    display: inline-block;
-}
-
-#btn-join:hover {
-    border-bottom: 2px blue solid;
-}
 
 /* ----------------------------------------------FOR BUSINESS */
 
@@ -300,33 +308,20 @@ main {
 
 .empower {
     position: absolute;
-    top: 10rem;
-    right: 10rem;
+    top: 5rem;
+    right: 7rem;
     font-size: 1.2rem;
+
 }
 
 .empower p {
-    margin: 1rem 0 1rem;
+    padding: 1rem 0 1.5rem;
     font-size: smaller;
+
 }
 
-#btn-stories {
-    padding: 10px 50px;
-    background-color: black;
-    display: inline-block;
-    margin: 0;
-}
 
-.black-btn {
-    color: white;
-    margin: 0px;
-    font-size: 1.1rem;
-    border-bottom: 2px solid black;
-}
 
-#black-btn:hover {
-    border-bottom: blue;
-}
 
 
 /* -----------------------------------------------BIG TEXT FOOTER */
