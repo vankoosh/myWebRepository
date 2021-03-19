@@ -323,17 +323,15 @@ main {
 /* ------------------------------------------------FOLLOW */
 
 .follow {
-   color: #867F7F;
-   font-size: 0.9rem;
-   padding-top: 3rem;
-   padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    color: #867F7F;
+    font-size: 0.9rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-.follow p {
-    display: inline-block;
-}
-
-.follow img {
+.follow a {
     margin-left: 1rem;
 }
 
