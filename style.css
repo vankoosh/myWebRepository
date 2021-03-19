@@ -341,8 +341,8 @@ main {
 footer {
     width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     background: #f2f2f2;
 
     
@@ -351,8 +351,8 @@ footer {
 .big-text {
     display: flex;
     justify-content: space-between;
-    width: 1600px;
-    margin: 0px 5%;
+    max-width: 1600px;
+    margin: 0px auto;
     background: #f2f2f2;
     color: #867F7F;
 }
