@@ -69,7 +69,7 @@ a {
     display: inline;
     padding:0px;
     border-bottom: 2px solid black;
-    transition: border-bottom 0.3s, padding 0.3s;
+    transition: border-bottom 0.4s;
 }
 
 .jumbo-link span p:hover {
@@ -320,8 +320,22 @@ main {
 
 }
 
+/* ------------------------------------------------FOLLOW */
 
+.follow {
+   color: #867F7F;
+   font-size: 0.9rem;
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+}
 
+.follow p {
+    display: inline-block;
+}
+
+.follow img {
+    margin-left: 1rem;
+}
 
 
 /* -----------------------------------------------BIG TEXT FOOTER */
