@@ -22,12 +22,28 @@ a {
     font-weight: bolder;
     display: inline-block;
     border-bottom: 2px solid white;
+    transition: border-bottom 0.4s;
+
 }
 
 .btn-link:hover {
-    color: #0071BA;
     border-bottom: 2px solid #0071BA;
+    /* padding-right: 13px; */
 }
+
+.btn-link::after {
+    content:"\203A";
+    color: #0071BA;
+    padding-left: 5px;
+    border-bottom: 2px solid white;
+    font-size: 1.5rem;
+    transition: padding-left 0.4s;
+}
+
+.btn-link:hover::after {
+    padding-left: 12px;
+}
+
 /* --------------------------------------------------CARDS */
 .card {
     max-width: 100%;
@@ -43,13 +59,19 @@ a {
     padding-bottom: 30px;
 }
 
+.card a img:hover {
+  opacity: 0.9;
+}
+
+
 .card a p {
     padding-right: 25px;
     padding-bottom: 2em;
     padding-top: 1em;
 
 }
-/* -----------------------------------------BLACK LINK JUMBOTRON BUTTON */
+
+/* --------------------------------------BLACK LINK JUMBOTRON BUTTON */
 .jumbo-link {
     display: block;
     color: white;
@@ -351,6 +373,7 @@ footer {
 .big-text {
     display: flex;
     justify-content: space-between;
+    width: 85%;
     max-width: 1600px;
     margin: 0px auto;
     background: #f2f2f2;
@@ -384,6 +407,7 @@ footer {
 
 .small-text {
     display: flex;
+    width: 85%;
     max-width: 1600px;
     margin: 0 auto;
     margin-top: 3rem;
@@ -403,6 +427,10 @@ footer {
 
 .small-text-left .material-icons-outlined {
     padding-right: 5px;
+}
+
+.small-text-left .material-icons-outlined:hover {
+    text-decoration: none;
 }
 
 .small-text-right {
