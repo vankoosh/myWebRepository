@@ -333,6 +333,10 @@ main {
     margin: 1rem 0 1rem;
 }
 
+.covid a {
+    font-weight: bold;
+}
+
 .covid a:hover {
     text-decoration: underline;
 }
@@ -340,19 +344,16 @@ main {
 .covid a::after {
     position: relative;
     top: 2px;
-    right: 5px;
+    right:-7px;
     content:"\203A";
     color: black;
     font-size: 1.5rem;
-    padding-left: 10px;
-    text-decoration: none;
     transition: right 0.4s;
 }
 
 .covid a:hover::after {
-    right: 0px;
+    right: -13px;
     text-decoration: none;
-
 }
 
 
