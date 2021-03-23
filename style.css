@@ -28,7 +28,6 @@ a {
 
 .btn-link:hover {
     border-bottom: 2px solid #0071BA;
-    /* padding-right: 13px; */
 }
 
 .btn-link::after {
@@ -93,6 +92,8 @@ a {
     padding:0px;
     border-bottom: 2px solid black;
     transition: border-bottom 0.4s;
+    font-size: 1rem;
+
 }
 
 .jumbo-link span p::after {
@@ -281,7 +282,7 @@ main {
 
 .join h1 {
     font-size: 2.0em;
-    font-weight:     bold;
+    font-weight: bold;
     margin: 0px;
     padding-bottom: 0.5em;
 }
@@ -349,14 +350,13 @@ main {
     color: black;
     font-size: 1.5rem;
     transition: right 0.4s;
+    text-decoration: none !important;
 }
 
 .covid a:hover::after {
     right: -13px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
-
-
 
 /* ------------------------------------------------GENDER-RACE */
 
@@ -477,4 +477,48 @@ footer {
 }
 .small-text-right a {
     margin-left: 1.5rem;
+}
+
+@media screen and (max-width:1285px){
+    .join h1 {
+        font-size: 1.5em;
+    }
+
+    .join p{
+        font-size: 1.1em;
+    }
+
+    .jumbo-link {
+        font-size: 0.9rem;
+    }
+
+    .empower {
+        font-size: 1.1rem;
+        right: 5rem;
+        top: 3rem;
+    }
+    .jumbo-link span p::after {
+        font-size: 1.5rem;
+        top: -6px;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    main {
+        width:100%;
+    }
+
+    .offers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+
+    .card p {
+        max-width: 360px;
+    }
 }
