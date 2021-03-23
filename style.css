@@ -14,8 +14,16 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    /* display: inline; */
 }
+
+main {
+    position: relative;
+    margin: 10px auto;
+    width: 85%;
+    max-width: 1600px;   
+}
+
+
 /* --------------------------------------------BLUE CARD LINKS */
 .btn-link {
     color: #0071BA;
@@ -118,13 +126,8 @@ a {
 
 }
 
-/*-----------------------------------------------MAIN */
-main {
-    position: relative;
-    margin: 10px auto;
-    width: 85%;
-    max-width: 1600px;   
-}
+/*-----------------------------------------------NAV */
+
 
 .logo{
     position: absolute;
@@ -138,10 +141,12 @@ main {
     justify-content: space-between;
     margin-bottom: 1.2em;
     margin-top: 1.5em;
+    width: 100%;
+
 }
 
 
-/* ------------------------------------------- MAIN MENU */
+/* ------------------------------------------- LEFT MENU */
 .main-menu, .side-menu{
     display: flex;
 }
@@ -166,7 +171,7 @@ main {
 }
 
 
-/* ----------------------------------------- SIDE MENU */
+/* ----------------------------------------- RIGHT MENU */
 .side-menu li{
     margin-left: 5em;
 }
@@ -482,8 +487,6 @@ footer {
 
 /* ----------------------------------MEDIA QUERIES */
 
-
-
 @media screen and (max-width:1285px){
     .join h1 {
         font-size: 1.5em;
@@ -507,8 +510,13 @@ footer {
         top: -6px;
     }
 
-}
+    .hidden {
+        display: none;
+    }
 
+.side-menu li:last-child {
+        margin-right: 0px;
+}
 /* --------------------------------------------- */
 
 @media screen and (max-width:1100px){
