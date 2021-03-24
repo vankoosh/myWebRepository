@@ -142,13 +142,18 @@ main {
     margin-bottom: 1.2em;
     margin-top: 1.5em;
     width: 100%;
-
+    max-width: 1600px;
+    white-space: nowrap;
 }
 
 
 /* ------------------------------------------- LEFT MENU */
 .main-menu, .side-menu{
     display: flex;
+}
+
+.main-menu li:nth-child(6) {
+    display: none;
 }
 
 .main-menu li:first-child{
@@ -163,7 +168,7 @@ main {
     list-style-type: none;
     margin-top: 4px;
     border-bottom: 2px solid white;
-    padding-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 .nav ul li:hover {
@@ -180,8 +185,9 @@ main {
     border-bottom: 2px black solid;
 }
 
-.side-menu li:first-child {
+#all-microsof {
     border-bottom: 2px black solid;
+    padding: 0px;
 }
 
 .side-menu li:last-child {
@@ -229,6 +235,7 @@ main {
     justify-content: space-between;
     padding-top: 1em;
     margin-bottom: 3em;
+    white-space: nowrap;
 }
 
 .shop a {
@@ -487,7 +494,47 @@ footer {
 
 /* ----------------------------------MEDIA QUERIES */
 
+@media screen and (max-width:1375px) {
+    .hidden {
+        display: none;
+    }
+
+    .logo {
+        left: 25px;
+    }
+
+    #sign-in-icon, #cart-icon, #search-icon {
+        left: -5px;
+        top: -5px;
+}
+
+    .side-menu li{
+        margin-left: 0px;
+        margin-right: 50px;
+}
+
+    [title~="All"] {
+        /* padding-right: 0px; */
+    }
+/* ------------ */
+
+
+
 @media screen and (max-width:1285px){
+
+    main {
+        width: 100%;
+    }
+
+    .shop {
+        white-space: normal;
+    }
+
+    .side-menu li{
+        margin-left: 0px;
+        margin-right: 60px;
+    }
+
     .join h1 {
         font-size: 1.5em;
     }
@@ -510,19 +557,10 @@ footer {
         top: -6px;
     }
 
-    .hidden {
-        display: none;
-    }
-
-.side-menu li:last-child {
-        margin-right: 0px;
-}
-/* --------------------------------------------- */
+/* ------------------ */
 
 @media screen and (max-width:1100px){
-    main {
-        width:100%;
-    }
+
 
     .offers {
         display: grid;
@@ -534,7 +572,6 @@ footer {
         max-width: 4700px;
         padding: 0px 2rem 2rem 2rem;
     }
-
 
     .jumbotron-2 {
         margin-top: 1rem;
@@ -568,4 +605,52 @@ footer {
         margin-top: 5px;
     }
 
+}
+
+@media screen and (max-width:1000px) {
+
+    .main-menu li:nth-child(6) {
+        display: inline-block;
+    }
+
+    .main-menu li:nth-child(6)::after {
+        position: absolute;
+        top: -8px;
+        left: 35px;
+        margin-left: 5px;    
+        content:"\203A";
+        color: black;
+        font-size: 1.2rem;
+        padding-left: 10px;
+        margin: 0px;
+        transform: rotate(90deg);
+    }
+
+
+    .main-menu li:nth-child(7), .main-menu li:nth-child(8) {
+        display: none;
+}
+
+
+@media screen and (max-width:930px){
+    .main-menu li:nth-child(5) {
+        display: none;
+}
+
+@media screen and (max-width:850px){
+    .main-menu li:nth-child(4) {
+        display: none;
+}
+
+
+
+@media screen and (max-width:815px){
+    
+    .main-menu {
+        display:none;
+    }
+
+    .side-menu {
+        left: 200px;
+    }
 }
